@@ -11,7 +11,7 @@ function App() {
         `${backendHostUrl}/geeks-firebase-72e6d/us-central1/helloWorld`
       );
 
-      const data = await res.text();
+      const data = await res.json();
 
       console.log("The res: ", data);
     })();
