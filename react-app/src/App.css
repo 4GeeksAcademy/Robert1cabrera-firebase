@@ -1,4 +1,7 @@
-.app-1{
-  background: yellow;
+.App{
+  margin: 0 auto;
+  background: black;
+  color: white;
+  width: 500px;
+  height: 75vh;
 }
-
