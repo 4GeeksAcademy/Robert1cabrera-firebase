@@ -1,7 +1,27 @@
 .App{
   margin: 0 auto;
+  border-radius: 20px;
   background: black;
   color: white;
   width: 500px;
   height: 75vh;
+}
+.city {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  padding-bottom: 0px;
+}
+.temp {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 80px;
+}
+.condit {
+  text-align: center;
+}
+.low-high {
+  display: flex;
+  justify-content: space-around;
 }
