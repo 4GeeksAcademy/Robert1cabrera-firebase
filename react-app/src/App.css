@@ -6,6 +6,9 @@
   width: 500px;
   height: 75vh;
 }
+.hour-cast{
+  margin-top: 1px solid black;
+}
 .city {
   text-align: center;
   padding-top: 60px;
@@ -17,6 +20,7 @@
   text-align: center;
   margin-top: 0px;
   font-size: 80px;
+  margin-bottom: 10px;
 }
 .condit {
   text-align: center;

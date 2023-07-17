@@ -11,6 +11,7 @@ function App() {
   const [highTemp, setHighTemp] = useState(0);
   const [icon, setIcon] = useState(0);
   const [condition, setCondition] = useState(0);
+  const [hour, setHour] = useState(0);
 
   const [dataLoaded, setDataLoaded] = useState(false);
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       setHighTemp(data.data.forecast.forecastday[0].day.maxtemp_f);
       setIcon(data.data.current.condition.icon);
       setCondition(data.data.forecast.forecastday[0].day.condition.text);
+      setHour(data.data.forecast.forecastday[0].hour[0]);
       setDataLoaded(true)
 
       console.log("The res: ", data.data);
@@ -34,11 +36,14 @@ function App() {
   if (!dataLoaded) return <p> ... Loading</p>
   return (
     <div className="App">
-      <div>
-        <h1 className="city"> {location} </h1>
-        <h2 className="temp">{currentTemp}</h2>
-        <h3 className="condit">{condition}</h3>
-        <h3 className="low-high">L:{lowTemp}  H:{highTemp}</h3>
+      <h1 className="city"> {location} </h1>
+      <h2 className="temp">{currentTemp}</h2>
+      <h3 className="condit">{condition}</h3>
+      <h3 className="low-high">L:{lowTemp}  H:{highTemp}</h3>
+      <div className="hour-cast">
+
+        {icon}
+        {hour}
 
       </div>
     </div>
