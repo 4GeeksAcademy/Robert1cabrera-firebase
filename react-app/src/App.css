@@ -8,7 +8,20 @@
 }
 .hour-cast{
   margin-top: 1px solid black;
+  overflow-x: scroll;
+  /* overflow-y: hidden; */
+  background: grey;
+  border-radius: 25px;
+  width: 95%;
+  margin: 0 auto;
+  height: 15vh;
 }
+h5 {
+  margin-left: 20px;
+  margin-bottom: 0px;
+  color: lightgray;
+}
+  
 .city {
   text-align: center;
   padding-top: 60px;
